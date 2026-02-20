@@ -1,9 +1,8 @@
 package CSCI1933P1;
-// FractalDrawer class draws a fractal of a shape indicated by user input
 import java.awt.Color;
 
 public class FractalDrawer {
-    private double totalArea=0;  // member variable for tracking the total area
+    private double totalArea = 0;  // member variable for tracking the total area
 
     public FractalDrawer() {}  // contructor
 
@@ -13,12 +12,24 @@ public class FractalDrawer {
     // and determines which shapes to draw a fractal by calling appropriate helper function
     // drawFractal returns the area of the fractal
     public double drawFractal(String type) {
+        Canvas canvas = new Canvas();
+        if (type.equalsIgnoreCase("triangle")) {
+            this.drawTriangleFractal();
+        }
+        else if (type.equalsIgnoreCase("circle")) {
+            this.drawCircleFractal();
+        }
+        else if (type.equalsIgnoreCase("rectangle")) {
+            this.drawRectangleFractal();
+        }
+        return totalArea;
     }
 
 
     //TODO:
     // drawTriangleFractal draws a triangle fractal using recursive techniques
-    public void drawTriangleFractal(double width, double height, double x, double y, Color c, Canvas can, int level){
+    public void drawTriangleFractal(double width, double height, double x, double y, Color c, Canvas can, int level) {
+
     }
 
 
