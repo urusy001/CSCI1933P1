@@ -33,11 +33,11 @@ public class Rectangle {
     }
 
     public double calculatePerimeter() {
-        return this.width + 2 * Math.sqrt(Math.pow(this.width/2, 2) + Math.pow(this.height, 2));
+        return 2*(width+height);
     }
 
     public double calculateArea() {
-        return this.width * this.height / 2;
+        return width*height;
     }
 
     public void setColor(Color color) {
