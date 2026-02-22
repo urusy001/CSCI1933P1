@@ -4,16 +4,16 @@ import java.awt.Color;
 public class Circle {
     private double xPos;
     private double yPos;
-    private double rad;
+    private double radius;
     private Color color;
     public Circle(double xPos,double yPos,double rad){
         this.xPos=xPos;
         this.yPos=yPos;
-        this.rad=rad;
+        this.radius=rad;
     }
 
     public double getRadius() {
-        return rad;
+        return radius;
     }
 
     public double getYPos() {
@@ -25,10 +25,10 @@ public class Circle {
     }
 
     public double calculatePerimeter(){
-        return Math.PI*2*rad;
+        return Math.PI*2*radius;
     }
     public double calculateArea(){
-        return Math.pow((Math.PI*2),2);
+        return Math.pow(this.radius, 2)*Math.PI;
     }
     public void setColor(Color color){
         this.color=color;
@@ -38,7 +38,7 @@ public class Circle {
         this.yPos=y;
     }
     public void setRadius(double radius){
-        this.rad=radius;
+        this.radius=radius;
     }
 
     public Color getColor() {

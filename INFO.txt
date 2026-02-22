@@ -1,0 +1,45 @@
+CSCI 1933 Project 1 - INFO.txt
+
+Group Members:
+- Name: Paylak Urusyan
+- x500: urusy001@umn.edu
+- Partner Name: Areg Arzumanyan
+- Partner x500: arzum005@umn.edu
+
+Contributions:
+- Paylak Urusyan:
+  - Triangle & Rectangle classes and fractal drawing functions for the shapes
+  - Testing Cases in FractalProgram
+
+- Areg Arzumanyan:
+  - Circle class and fractal drawing function for the shape
+  - drawFractal and colorFor functions in FractalDrawer class
+
+How to Compile and Run:
+- From the parent directory (the directory containing the CSCI1933P1 folder):
+  - Compile: javac CSCI1933P1/FractalProgram.java
+  - Run: java CSCI1933P1.FractalProgram
+- When prompted, enter one of: triangle, rectangle, or circle
+
+Assumptions:
+- User input is expected to be one of the three supported shape names: triangle, rectangle, or circle.
+- Fractal recursion depth is fixed at 7 levels in FractalDrawer.
+- Program uses the default Canvas size (800x800) created by new Canvas().
+- Total area is the sum of all drawn shapes without subtracting overlap.
+
+Additional Features Implemented:
+- Input validation for missing/empty/invalid shape input in FractalProgram.
+- Case-insensitive shape selection (triangle, rectangle, circle).
+- Color variation across recursive calls using generated HSB colors.
+
+Known Bugs / Defects:
+- Circle.calculateArea() currently uses an incorrect formula and does not depend on radius, so circle area values (and total area for circle fractals) are incorrect.
+- On invalid input, the program prints an error and exits instead of re-prompting the user.
+
+Outside Sources Consulted (aside from course resources):
+- idea1: how fractals work https://www.reddit.com/r/explainlikeimfive/comments/v36ne1/eli5_what_exactly_are_fractals_and_why_do_they/
+
+We certify that the information contained in this INFO file is complete and accurate. We have both read and followed the course policies in the Academic Integrity - Course Policy section of the course syllabus.
+
+Paylak Urusyan
+Areg Arzumanyan
